@@ -1,0 +1,76 @@
+/*Подключение шрифтов*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+/*Переменные*/
+
+$fw-semi:600;
+$fw-bold: 700;
+
+/*Подключение внешних стилей*/
+@import "reset";
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/important";
+@import "blocks/what";
+@import "blocks/services";
+@import "blocks/platform";
+@import "blocks/footer";
+@import "blocks/courses";
+@import "blocks/search-courses";
+@import "blocks/teachers";
+
+
+/*Базовые настройки*/
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #fff;
+	color: #4D5060;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 500;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.container {
+	max-width: 1160px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+.section-title {
+	font-size: 48px;
+	line-height: 59px;
+	font-weight: $fw-bold;
+	text-align: center;
+	margin-bottom: 100px;
+
+	&--left {
+		text-align: left;
+	}
+	&--margin {
+		margin-bottom: 10px;
+	}
+	span {
+		color: transparent;
+		background-clip: text;
+		background-image: linear-gradient(90deg, #A032C3 0%, #436DE6 100%);
+	}
+
+	@media (max-width: 680px) {
+		font-size: 32px;
+		line-height: 40px;
+		margin-bottom: 30px;
+		text-align: left;
+	}
+
+	@media (max-width: 500px) {
+		font-size: 24px;
+		line-height: 29px;
+	}
+}
+section {
+	padding: 50px 0;
+}
